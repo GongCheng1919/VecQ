@@ -1,0 +1,28 @@
+Copyright (c) <2020>
+<Nankai University, Tianjin, China>
+<Advanced Digital Sciences Center, Singapore>
+<University of Illinois at Urbana-Champaign>
+All rights reserved.
+The software design
+comprising "VecQ" source code and affiliated documentation is
+Copyright by the authors Cheng Gong, Yao Chen, Ye Lu, Tao Li, Cong Hao, Deming Chen, and
+the Nankai University, Tianjin, China,
+the Advanced Digital Sciences Center, Singapore
+and the University of Illinois at Urbana-Champaign.
+Only non-commercial, not-for-profit use of this design is permitted. No part
+of this software design may be incorporated into a commercial product without the
+written consent of the authors.  Similarly, use of
+this software to assist in the development of new commercial applications is
+prohibited, unless the written consent of the authors is obtained. To obtain such a written consent, please contact the following three authors: (litao@nankai.edu.cn),  (yao.chen@adsc-create.edu.sg), (dchen@illinois.edu). 
+This software is provided "as is" with no warranties or guarantees of support.
+All users of this software design must take the software copy from this site. You may modify or
+use the source code for other non-commercial, not-for-profit research endeavors,
+provided that all copyright attribution on the source code is retained, and the
+original or modified source code is not redistributed, in whole or in part, or
+included in or with any commercial product, except by written agreement with
+the authors, and full and complete copyright attribution for use of the code is included in
+any resulting publications. Subject to these conditions, the software is
+provided free of charge to all interested parties.
+When referencing this particular open-source software in a publication, please
+cite the following paper:
+Cheng Gong, Yao Chen, Ye Lu, Tao Li, Cong Hao, and Deming Chen, “VecQ: Minimal Loss DNN Model Compression With Vectorized Weight Quantization”, IEEE Transactions on Computers, May 2020.
