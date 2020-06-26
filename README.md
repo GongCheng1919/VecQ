@@ -18,7 +18,7 @@ cd VecQ
 ```
 
 # Demo
-Please find the demos of [VecQ](./VecQ_Demo.ipynb) and [$\mu$L2Q](./uL2Q_Demo.ipynb).
+Please find the demos of [VecQ](./VecQ_Demo.ipynb) and [uL2Q](./uL2Q_Demo.ipynb).
 
 # License
 Please refer to [license](./license).
