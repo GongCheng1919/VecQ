@@ -11,17 +11,15 @@
 - [Keras](https://github.com/keras-team/keras) v 2.2.4
 
 ### commands
+We recommend using Anaconda (Python 3.7) to configure the running environment.
 ```
-pip install tensorflow-gpu==1.13.1 keras==2.2.4
+conda install jupyter matplotlib tensorflow-gpu==1.13.1 keras==2.2.4
 git clone https://github.com/GongCheng1919/VecQ.git
 cd VecQ
+jupyter-lab
 ```
-
 # Demo
-Please find the demos of [VecQ](./VecQ_Demo.ipynb) and [uL2Q](./uL2Q_Demo.ipynb).
-
-# License
-Please refer to [license](./license).
+Please find the demos of [VecQ](./Demo.ipynb) and [uL2Q](./uL2Q_Demo.ipynb) and open the Demo file on the opened browser web page.
 
 # Citation
 Please cite our works in your publications if it helps your research:
