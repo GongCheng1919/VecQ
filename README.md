@@ -6,11 +6,11 @@
 
 
 # Installation
-### libraries
+### Libraries
 - [Tebsorflow](https://github.com/tensorflow/tensorflow) v 1.13.1
 - [Keras](https://github.com/keras-team/keras) v 2.2.4
 
-### commands
+### Commands
 We recommend using Anaconda (Python 3.7) to configure the running environment.
 ```
 conda install jupyter matplotlib tensorflow-gpu==1.13.1 keras==2.2.4
@@ -22,7 +22,7 @@ jupyter-lab
 Please find the demo of [VecQ](./Demo.ipynb) (more demos can be found in [examples](./examples)) and open the Demo file on the opened browser web page.
 
 # Citation
-Please cite our works in your publications if it helps your research:
+Please cite our work in your publications if it helps your research:
 ```
 @article{cheng2019uL2Q,
   title={$\mu$L2Q: An Ultra-Low Loss Quantization Method for DNN},
@@ -30,6 +30,14 @@ Please cite our works in your publications if it helps your research:
   journal={The 2019 International Joint Conference on Neural Networks (IJCNN)},
   year={2019}
 }
+```
+
+
+
+This framework also supports the uL2Q quantization method in Keras, where the original framework is designed with Caffe.
+The examples/vgg-like/uL2Q_demo.ipynb show the details to adopt it.
+Please cite our work in your publication if it helps:
+```
 @article{cheng2020VecQ,
   title={{VecQ}: Minimal Loss DNN Model Compression With Vectorized Weight Quantization},
   author={Cheng, Gong and Yao, Chen and Ye, Lu and Tao, Li and Cong, Hao and Deming, Chen},
