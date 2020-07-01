@@ -24,24 +24,22 @@ Please find the demo of [VecQ](./examples/vecq_demo/Demo.ipynb) (more demos can 
 # Citation
 Please cite our work in your publications if it helps your research:
 ```
-@article{cheng2019uL2Q,
-  title={$\mu$L2Q: An Ultra-Low Loss Quantization Method for DNN},
-  author={Cheng, Gong and Ye, Lu and Tao, Li and Xiaofan, Zhang and Cong, Hao and Deming, Chen and Yao, Chen},
-  journal={The 2019 International Joint Conference on Neural Networks (IJCNN)},
-  year={2019}
-}
-```
-
-
-
-This framework also supports the uL2Q quantization method in Keras, where the original framework is designed with Caffe.
-The examples/vgg-like/uL2Q_demo.ipynb show the details to adopt it.
-Please cite our work in your publication if it helps:
-```
 @article{cheng2020VecQ,
   title={{VecQ}: Minimal Loss DNN Model Compression With Vectorized Weight Quantization},
   author={Cheng, Gong and Yao, Chen and Ye, Lu and Tao, Li and Cong, Hao and Deming, Chen},
   journal={IEEE Transactions on Computers},
   year={2020}
+}
+```
+
+This framework also supports the uL2Q quantization method in Keras, where the original framework is designed with Caffe.
+The examples/vgg-like/uL2Q_demo.ipynb show the details to adopt it.
+Please cite our work in your publication if it helps:
+```
+@article{cheng2019uL2Q,
+  title={$\mu$L2Q: An Ultra-Low Loss Quantization Method for DNN},
+  author={Cheng, Gong and Ye, Lu and Tao, Li and Xiaofan, Zhang and Cong, Hao and Deming, Chen and Yao, Chen},
+  journal={The 2019 International Joint Conference on Neural Networks (IJCNN)},
+  year={2019}
 }
 ```
