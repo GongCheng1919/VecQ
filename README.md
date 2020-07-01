@@ -19,7 +19,7 @@ cd VecQ
 jupyter-lab
 ```
 # Demo
-Please find the demo of [VecQ](./Demo.ipynb) (more demos can be found in [examples](./examples)) and open the Demo file on the opened browser web page.
+Please find the demo of [VecQ](./examples/vecq_demo/Demo.ipynb) (more demos can be found in [examples](./examples)) and open the Demo file on the opened browser web page.
 
 # Citation
 Please cite our work in your publications if it helps your research:
