@@ -16,6 +16,7 @@ We recommend using Anaconda (Python 3.7) to configure the running environment.
 conda install jupyter matplotlib tensorflow-gpu==1.13.1 keras==2.2.4
 git clone https://github.com/GongCheng1919/VecQ.git
 cd VecQ
+python setup.py install
 jupyter-lab
 ```
 # Demo

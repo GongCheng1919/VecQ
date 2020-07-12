@@ -2,10 +2,12 @@
 import keras
 import sys
 sys.path.append('../')
-from quantize_layers import Conv2D_Q, Dense_Q, DepthwiseConv2D_Q
+from ..quantize_layers import Conv2D_Q, Dense_Q, DepthwiseConv2D_Q
 def LeNet5(kq=None,
 		bq=None,
-		aq=None):
+		aq=None,
+		activation=None,
+		after_activation=None):
 	inputs=keras.layers.Input(shape=(28,28,1))
 	x=Conv2D_Q(name='conv2d_1',
 		trainable=True,
@@ -17,7 +19,7 @@ def LeNet5(kq=None,
 		padding='same',
 		data_format='channels_last',
 		dilation_rate=(1, 1),
-		activation='relu',
+		activation=activation,
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -26,7 +28,8 @@ def LeNet5(kq=None,
 		bias_constraint=None,
 		kq=kq,
 		bq=bq,
-		aq=aq)(inputs)
+		aq=aq,
+		after_activation=after_activation)(inputs)
 	x=keras.layers.normalization.BatchNormalization(name='batch_normalization_1',
 		trainable=True,
 		axis=-1,
@@ -56,7 +59,7 @@ def LeNet5(kq=None,
 		padding='same',
 		data_format='channels_last',
 		dilation_rate=(1, 1),
-		activation='relu',
+		activation=activation,
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -65,7 +68,8 @@ def LeNet5(kq=None,
 		bias_constraint=None,
 		kq=kq,
 		bq=bq,
-		aq=aq)(x)
+		aq=aq,
+		after_activation=after_activation)(x)
 	x=keras.layers.normalization.BatchNormalization(name='batch_normalization_2',
 		trainable=True,
 		axis=-1,
@@ -93,7 +97,7 @@ def LeNet5(kq=None,
 	x=Dense_Q(name='dense_1',
 		trainable=True,
 		units=512,
-		activation='relu',
+		activation=activation,
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -102,7 +106,8 @@ def LeNet5(kq=None,
 		bias_constraint=None,
 		kq=kq,
 		bq=bq,
-		aq=aq)(x)
+		aq=aq,
+		after_activation=after_activation)(x)
 	x=keras.layers.normalization.BatchNormalization(name='batch_normalization_3',
 		trainable=True,
 		axis=-1,
@@ -121,7 +126,7 @@ def LeNet5(kq=None,
 	outputs=Dense_Q(name='dense_2',
 		trainable=True,
 		units=10,
-		activation='softmax',
+		activation=activation,
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -130,6 +135,7 @@ def LeNet5(kq=None,
 		bias_constraint=None,
 		kq=kq,
 		bq=bq,
-		aq=aq)(x)
+		aq=aq,
+		after_activation=after_activation)(x)
 	model=keras.models.Model(inputs,outputs)
 	return model

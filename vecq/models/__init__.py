@@ -1,4 +1,3 @@
-from .VGG_like import VGG7_N
 from .lenet5_architecture import LeNet5
 from .vgglike_architecture import VGG_like
 from .alexnet_architecture import AlexNet
