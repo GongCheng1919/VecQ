@@ -2015,7 +2015,7 @@ def MobileNetV2(kq=None,
 	x155=Dense_Q(name='Logits',
 		trainable=True,
 		units=1000,
-		activation=activation,
+		activation="softmax",
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -2023,8 +2023,6 @@ def MobileNetV2(kq=None,
 		kernel_constraint=None,
 		bias_constraint=None,
 		kq=kq,
-		bq=bq,
-		aq=aq,
-		after_activation=after_activation)(x154)
+		bq=bq)(x154)
 	model=keras.models.Model(inputs,x155)
 	return model
