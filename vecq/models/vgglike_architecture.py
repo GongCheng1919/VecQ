@@ -288,7 +288,7 @@ def VGG_like(kq=None,
 	outputs=Dense_Q(name='dense_4',
 		trainable=True,
 		units=10,
-		activation=activation,
+		activation="softmax",
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -296,8 +296,6 @@ def VGG_like(kq=None,
 		kernel_constraint=None,
 		bias_constraint=None,
 		kq=kq,
-		bq=bq,
-		aq=aq,
-		after_activation=after_activation)(x)
+		bq=bq)(x)
 	model=keras.models.Model(inputs,outputs)
 	return model
