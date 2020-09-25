@@ -19,7 +19,7 @@ URL = 'https://github.com/GongCheng1919/VecQ'
 EMAIL = 'cheng-gong@mail.nankai.edu.cn'
 AUTHOR = 'Cheng Gong'
 REQUIRES_PYTHON = '>=3.7.0'
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
