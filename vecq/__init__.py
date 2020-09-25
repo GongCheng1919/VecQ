@@ -6,4 +6,4 @@ from . import quantize_layers
 from . import quantize_methods
 
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
