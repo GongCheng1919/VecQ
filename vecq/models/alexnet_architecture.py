@@ -273,7 +273,7 @@ def AlexNet(kq=None,
 	outputs=Dense_Q(name='dense_7',
 		trainable=True,
 		units=1000,
-		activation=activation,
+		activation="softmax",
 		use_bias=True,
 		kernel_regularizer=None,
 		bias_regularizer=None,
@@ -281,8 +281,6 @@ def AlexNet(kq=None,
 		kernel_constraint=None,
 		bias_constraint=None,
 		kq=kq,
-		bq=bq,
-		aq=aq,
-		after_activation=after_activation)(x)
+		bq=bq)(x)
 	model=keras.models.Model(inputs,outputs)
 	return model
